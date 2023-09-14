@@ -1,4 +1,4 @@
-
+import 'dotenv/config';
 import express, { Application, json } from 'express'
 import logics from './controllers/client.crontroler';
 import cors from 'cors';

@@ -7,6 +7,7 @@ export const client : Client = new Client({
     host: process.env.DB_HOST,
     database: process.env.DB_NAME,
     port: Number(process.env.DB_PORT),
+    ssl: true,
 })
 
 export const startDatabase: () => Promise<void> = async () => {
